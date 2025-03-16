@@ -1,0 +1,20 @@
+# Ignore environment variable files (with secrets)
+.env
+databricks_genie_bot/.env
+
+# Optionally, ignore the virtual environment directory
+venv/
+
+# You can also ignore other files/folders you don't want in Git
+databricks_genie_bot/__pycache__/
+databricks_genie_bot/slack_message.json
+databricks_genie_bot/statement_response.json
+databricks_genie_bot/test_databricks.py
+databricks_genie_bot/results.json
+databricks_genie_bot/results.txt
+databricks_genie_bot/message_data.json
+*.pyc
+create_requirements.py
+.DS_Store
+pyproject.toml
+dep.txt
