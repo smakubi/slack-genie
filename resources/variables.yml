@@ -1,0 +1,23 @@
+variables:
+  SLACK_TOKEN_APP:
+    description: Slack App Token.
+  SLACK_TOKEN_BOT:
+    description: Slack Bot Token.
+  SPACE_ID:
+    description: Genie space id.
+  SLACK_SIGNING_SECRET:
+    description: Slack signing secret for request verification.
+  DATABRICKS_HOST:
+    description: Databricks workspace URL.
+  DATABRICKS_TOKEN:
+    description: Databricks personal access token.
+  SLACK_CHANNEL_ID:
+    description: ID of the Slack channel for notifications.
+  MAINTAIN_CONTEXT:
+    description: Flag to maintain conversation context.
+  FORMAT_TABLES:
+    description: Flag to enable table formatting in responses.
+  MAX_RETRIES:
+    description: Maximum number of retry attempts.
+  RETRY_INTERVAL:
+    description: Time interval between retry attempts. 

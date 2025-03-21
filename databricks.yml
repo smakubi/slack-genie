@@ -1,0 +1,14 @@
+bundle:
+  name: slack-genie
+  uuid: b714c8c7-264b-4ed1-b21a-f74d2a674eb6
+
+include:
+  - resources/*.yml
+
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://e2-demo-field-eng.cloud.databricks.com/ # Put your workspace here

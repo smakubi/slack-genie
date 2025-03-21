@@ -1,0 +1,41 @@
+resources:
+  apps:
+    slack-genie:
+      name: "slack-genie"
+      source_code_path: "./"
+      description: "Slack App for communicating with genie apis"
+      config:
+        command:
+          - "python"
+          - app.py
+        env:
+          - name: "SLACK_BOT_APP"
+            value: ${env:SLACK_BOT_APP}
+          - name: "SLACK_BOT_TOKEN"
+            value: ${env:SLACK_BOT_TOKEN}
+          - name: "SPACE_ID"
+            value: ${env:SPACE_ID}
+          - name: "SLACK_SIGNING_SECRET"
+            value: ${env:SLACK_SIGNING_SECRET}
+          - name: "DATABRICKS_HOST"
+            value: ${env:DATABRICKS_HOST}
+          - name: "DATABRICKS_TOKEN"
+            value: ${env:DATABRICKS_TOKEN}
+          - name: "SLACK_CHANNEL_ID"
+            value: ${env:SLACK_CHANNEL_ID}
+          - name: "MAINTAIN_CONTEXT"
+            value: ${env:MAINTAIN_CONTEXT}
+          - name: "FORMAT_TABLES"
+            value: ${env:FORMAT_TABLES}
+          - name: "MAX_RETRIES"
+            value: ${env:MAX_RETRIES}
+          - name: "RETRY_INTERVAL"
+            value: ${env:RETRY_INTERVAL}
+
+
+
+
+# Databricks credentials
+
+
+# Bot configuration

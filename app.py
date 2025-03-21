@@ -199,7 +199,7 @@ def main():
         validate_config()
         
         # Get port from environment or use default
-        port = int(os.getenv("PORT", 3000))
+        port = int(os.getenv("PORT", 8000))
         
         # Run the Flask app
         app.run(host="0.0.0.0", port=port)

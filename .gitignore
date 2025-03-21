@@ -18,3 +18,5 @@ create_requirements.py
 .DS_Store
 pyproject.toml
 dep.txt
+.databricks
+app.yml
